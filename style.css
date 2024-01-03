@@ -1,0 +1,466 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+     list-style: none;
+    text-decoration: none;
+}
+
+*::selection {
+    background: var(--main-color);
+    color: #fff;
+}
+
+:root {
+    --main-color: #f81111e0;
+    --text-color: #1e1c2a;
+    --bg-color: #fff;
+
+    --big-font: 4rem;
+    --h2-font: 2.24rem;
+    --p-font: 0.9rem;
+}
+
+.anime{
+    opacity:0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+    }
+    @keyframes moveup{
+      100%{
+        opacity:1 ;
+        transform: translateY(0px);
+      }
+    }
+  
+section {
+    padding: 50px 10%;
+   }
+
+body.active {
+    --bg-color: #1e1c2a;
+    --text-color: #fff;
+}
+
+body {
+    color: var(--text-color);
+    background: var(--bg-color);
+}
+
+
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--bg-color);
+    padding: 18px 100px;
+    box-shadow: 0 0.5rem 50rem rgba(0, 0, 0, 0.1);
+}
+header h5{
+    font-size:medium;
+    color:black;
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: oblique;
+}
+.logo {
+    font-size:2rem;
+    font-weight: 600;
+    color:crimson;
+    padding-left:4rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.navbar {
+    display: flex;
+     }
+
+.navbar a {
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    color: var(--text-color);
+    font-weight: 500;
+    font-family:sans-serif;
+}
+
+.navbar a:hover {
+    color: var(--main-color);
+}
+
+#menu-icon {
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+
+.home {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1.5rem;
+    background: url(./imgs/piz1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.home-img img {
+    width: 100%;
+    height:20%;
+    margin-top:4.4rem;
+    border-radius:0.7rem;
+    box-shadow:0 0 0.7rem whitesmoke;
+    border:0.3rem solid whitesmoke;
+}
+
+
+.home-text h1 {
+    font-size: var(--big-font);
+    color: var(--main-color); 
+}
+.home-text h2{
+    font-size:2rem;
+     color:whitesmoke;
+     margin-top:0.7rem;
+     }
+.home-text h3{
+    color:yellow;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:600;
+  
+
+}
+.home-text h4{
+    font-size:2rem;
+     color:whitesmoke;
+}
+
+
+.btn {
+    display: inline-block;
+    background: var(--main-color);
+    padding: 10px 20px;
+    border-radius: 0.5rem;
+    color: #fff;
+    margin-top: 1rem;
+}
+
+.btn:hover {
+    background: #ffa400;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    align-items: center;
+    margin-top:2rem;
+}
+
+
+.about-img img {
+    max-width:70%;
+    border-radius: 1rem;
+    margin-top:7rem;
+    clip-path: circle(50%);
+}
+.about-text{
+    margin-top:5rem;
+}
+
+
+.about-text span {
+    color: var(--main-color);
+    font-weight: 500;
+    font-size:2.5rem;
+}
+
+.about-text h2 {
+    font-size: larger;
+    margin-top: 0.3rem;
+}
+
+.about-text p {
+    margin: 0.8rem 0 1.8rem;
+    font-size: larger;
+    line-height: 2.1rem;
+}
+
+.heading {
+    text-align: center;
+    }
+
+.heading span {
+    color: var(--main-color);
+    font-weight: 500;
+    font-size:2.5rem;
+
+}
+
+.heading h2 {
+    font-size:large;
+}
+
+.typewriter {
+    width:10%;
+    height:5%;
+     overflow: hidden;
+     border-right:0.1rem solid orange;
+    white-space: nowrap;
+    animation:
+      typing 5s steps(52) infinite,
+      blink-caret 0.7s infinite;
+      font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-style: oblique;
+      
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+  
+    to {
+      width: 85%;
+    }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+  
+    from,
+    to {
+      border-color: transparent;
+    }
+  
+    40% {
+      border-color: orange;
+    }
+  }
+  
+
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+    gap: 2rem;
+    align-items: center;
+}
+
+.box {
+    position: relative;
+    margin-top: 2rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgb(4 64 54 / 10%);
+    padding: 10px;
+}
+
+.box-img {
+    width: 200px;
+    height: 200px;
+}
+
+.box-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.box h2 {
+    font-size: 1.2rem;
+}
+
+.box h3 {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 4px 0 10px;
+}
+
+.box span {
+    font-size: var(--p-font);
+    font-weight: 500;
+}
+
+.box .bx {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 20px;
+    background: var(--main-color);
+    border-radius: 0 0.5rem 0 0.5rem;
+    padding: 5px 8px;
+}
+
+.box .bx:hover {
+    background: #ffa400;
+}
+
+.servives-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+    gap: 1.5rem;
+    }
+
+.s-box {
+    text-align: center;
+  
+}
+
+.s-box img {
+    width: 60px;
+}
+
+.s-box h3 {
+    margin: 4px 0 10px;
+}
+
+.connect-text h2{
+text-align: center;
+color: var(--main-color);
+}
+.connect-text h5{
+    text-align: center;
+    font-weight: 500;
+    font-size: medium;
+    }
+.contact {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    gap: 2rem;
+}
+.contact-box{
+    padding-left: 2rem;
+    
+}
+.contact-box h3 {
+    margin-bottom: 1rem;
+    
+}
+
+.social {
+    display: flex;
+    margin-top: 1.5rem;
+}
+
+.social i {
+    font-size: 20px;
+    margin-right: 1rem;
+    color: var(--text-color);
+}
+
+.social i:hover {
+    color: var(--main-color);
+}
+
+.address {
+    display: flex;
+    flex-direction: column;
+    padding-left:1rem;
+}
+
+.address i {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.address span {
+    margin-left: 1rem;
+}
+
+.copyright {
+    padding: 20px;
+    text-align: center;
+}
+
+@media (max-width: 921px) {
+    header {
+        padding: 14px 41px;
+    }
+
+    :root {
+        --big-font: 3rem;
+        --h2-font: 1.7rem;
+    }
+}
+
+@media (max-width: 768px) {
+    section {
+        padding: 50px 8%;
+    }
+
+    #menu-icon {
+        display: initial;
+        color: var(--text-color);
+    }
+
+    header .navbar {
+        position: absolute;
+        top: -400px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background: var(--bg-color);
+        box-shadow: 0 4px 4px rgb(0 0 0 / 10%);
+        transition: 0.2s ease;
+    }
+
+    .navbar.active {
+        top: 100%;
+    }
+
+    .navbar a {
+        padding: 1.5rem;
+        display: block;
+        background: var(--bg-color);
+    }
+
+    
+}
+
+@media (max-width: 715px) {
+    header {
+        padding: 10px 16px;
+    }
+
+    .home {
+        grid-template-columns: 1fr;
+    }
+
+    .about {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .about-img {
+        order: 2;
+    }
+}
+@media (max-width: 450px) {
+    :root {
+        --big-font: 2rem;
+        --h2-font: 1.4rem;
+    }
+
+    .home-text {
+        padding-top: 4rem;
+    }
+}
