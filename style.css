@@ -23,7 +23,30 @@
     --big-font: 4rem;
     --h2-font: 2.24rem;
     --p-font: 0.9rem;
+
 }
+
+header .shopping{
+    position: relative;
+    text-align: right;
+}
+header .shopping img{
+    width:2rem;
+}
+header .shopping span{
+    background: red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: absolute;
+    top: -5px;
+    left: 80%;
+    padding: 3px 10px;
+}
+
+
 /*==================== Waving hand  ====================*/
 .wavehand {
     animation-name: wave-animation;
@@ -132,6 +155,7 @@ header h5{
 
 .navbar {
     display: flex;
+    margin-right:-23rem;
      }
 
 .navbar a {
