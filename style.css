@@ -137,18 +137,22 @@ header h5{
 .navbar a {
     font-size: 1.1rem;
     padding: 10px 20px;
-    color: var(--text-color);
+    color:black;
     font-weight: 500;
     font-family:sans-serif;
-}
+   }
 
 .navbar a:hover {
-    color: var(--main-color);
+    color:crimson;
+    transition:0s ease-in;
+    cursor:pointer;
+
+
 }
 
 #menu-icon {
     font-size: 2rem;
-    cursor: pointer;
+    cursor:pointer;
     display: none;
 }
 
@@ -166,7 +170,7 @@ header h5{
 
 .home-img img {
     width:95%;
- margin-top:4.4rem;
+ margin-top:3rem;
     border-radius:0.7rem;
     box-shadow:0 0 0.7rem whitesmoke;
     border:0.3rem solid whitesmoke;
@@ -193,6 +197,7 @@ header h5{
     font-size:2rem;
      color:whitesmoke;
 }
+
 
 
 .btn {
@@ -232,6 +237,9 @@ header h5{
     color: var(--main-color);
     font-weight: 500;
     font-size:2.5rem;
+}
+.about-text h2 span {
+      font-size:1.8rem;
 }
 
 .about-text h2 {
