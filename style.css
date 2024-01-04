@@ -444,6 +444,10 @@ color: var(--main-color);
     padding: 20px;
     text-align: center;
 }
+.copyright span {
+     color: var(--main-color);
+     font-weight: 600;
+}
 
 @media (max-width: 921px) {
     header {
